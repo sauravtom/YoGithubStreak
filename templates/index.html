@@ -1,0 +1,22 @@
+{% extends "templates/base.html" %}
+
+
+{% block title %}About Us {% endblock %}
+
+{% block content %}
+
+    <h2>Don't Break your Github Streaks</h2>
+    <h4>Get notified in time.</h4>
+    <h5>We'll send you a YO notification when you are 5 hours away from breaking your github streak.</h5>
+
+    <form action="/add_user" method="GET">
+        <div>
+            <label for="username">Your Yo Username:</label>
+            <input type="text" name="username" />
+        </div>
+        <div class="button">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+{% endblock %}

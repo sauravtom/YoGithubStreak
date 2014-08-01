@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>YO_GITHUB_STREAK</title>
+    <link type="text/css" rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/bootstrap-theme.min.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <meta name="description" content="Yo github streak notifies you when you are about to break your github streak, by sending you a yo on yo.">
+    
+  </head>
+  <body>
+      
+      <div class="content">
+          {% block content %}{% endblock %}
+      </div>
+
+      <script src='/static/js/jquery.min.js'></script>
+      <script src='/static/js/bootstrap.min.js'></script>
+      <script src='/static/js/prefixfree.min.js'></script>
+
+      {% block script %}{% endblock %}
+      
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-47961749-1', 'wecure.co.in');
+        ga('send', 'pageview');
+
+      </script>
+
+  </body>
+
+</html>

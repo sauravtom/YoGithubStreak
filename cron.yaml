@@ -1,0 +1,4 @@
+cron:
+- description: check_github
+  url: /cron
+  schedule: every 1 hours
