@@ -26,7 +26,7 @@ def need_to_notify(github_username):
     diff = datetime.datetime.now() - last_commit_time_obj
     minutes_diff = divmod(diff.days * 86400 + diff.seconds, 60)[0]
 
-    if minutes_diff > (24*60-3*60):
+    if minutes_diff > (24*60-3*60) and minutes_diff < (27*60-3*60):
         return True
     
     return False
